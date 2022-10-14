@@ -12,7 +12,7 @@ from sklearn.model_selection import train_test_split
 
 
 def get_data():
-    # 取数据
+    # 取数据 数据涉及保密，所以没有上传，其实就是一个csv文件，下面中文就是列名，行数大于12000.
     data_path = r"./data/Boiler_2022_08_10-15.csv"
     read_data = pd.read_csv(data_path, index_col=0).iloc[:12000, 0:18]
     all_data = pd.DataFrame([])
